@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<title>StarWars Starship Comparison</title>
+		<style>
+		.higher { background-color: red }
+		table { border: 1px solid; margin-top: 20px; padding: 2px 8px; }
+		table td, table th { border: 1px solid }
+		table.hidden { display: none; }
+		</style>
+    </head>
+    <body>
+
+		<h3> Select two Starships from the dropdown lists to compare </h3>
+		<select id="select1">
+		</select>
+		<select id="select2">
+		</select>
+		<input type="button" id="button" value="Compare"/>
+		
+		<table id="table" class="hidden">
+			<thead>
+				<tr>
+					<th></th>
+					<th>Starship 1</th>
+					<th>Starship 2</th>
+				</tr>
+			</thead>
+			<tbody id="table-body">
+			</tbody>
+		</table>
+
+        <script src="starwars.js"></script> 
+    </body>
+</html>
